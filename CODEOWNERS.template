@@ -1,0 +1,70 @@
+# CODEOWNERS Template for Organization
+# Copy this file to .github/CODEOWNERS in your repository
+# and adapt it to your project specifics (remove .template suffix)
+
+# =================================================================
+# GLOBAL RULES (adapt to your project)
+# =================================================================
+
+# All files by default - main project maintainer
+* @your-username
+
+# =================================================================
+# FRONTEND (replace with your teams)
+# =================================================================
+/src/components/ @your-org/frontend-team
+/src/pages/ @your-org/frontend-team
+*.tsx @your-org/frontend-team
+*.jsx @your-org/frontend-team
+*.css @your-org/frontend-team
+*.scss @your-org/frontend-team
+
+# =================================================================
+# BACKEND (replace with your teams)
+# =================================================================
+/api/ @your-org/backend-team
+/server/ @your-org/backend-team
+*.sql @your-org/backend-team
+
+# =================================================================
+# DEVOPS AND INFRASTRUCTURE
+# =================================================================
+/.github/ @your-org/devops-team
+/docker/ @your-org/devops-team
+Dockerfile @your-org/devops-team
+docker-compose.yml @your-org/devops-team
+*.yml @your-org/devops-team
+*.yaml @your-org/devops-team
+
+# =================================================================
+# DOCUMENTATION
+# =================================================================
+/docs/ @your-org/tech-writers
+*.md @your-org/tech-writers
+README.md @your-username @your-org/tech-writers
+
+# =================================================================
+# CRITICAL CONFIGURATION FILES
+# =================================================================
+package.json @your-username @your-org/senior-devs
+package-lock.json @your-username @your-org/senior-devs
+tsconfig.json @your-username @your-org/senior-devs
+.eslintrc* @your-username @your-org/senior-devs
+
+# =================================================================
+# SECURITY (always requires special attention)
+# =================================================================
+/.env.example @your-org/security-team @your-username
+/config/security/ @your-org/security-team
+*.pem @your-org/security-team
+*.key @your-org/security-team
+
+# =================================================================
+# ADAPTATION INSTRUCTIONS:
+# =================================================================
+# 1. Replace @your-username with your main maintainer
+# 2. Replace @your-org/team-name with your actual teams
+# 3. Adapt paths to your project structure
+# 4. Remove irrelevant sections
+# 5. Add project-specific rules
+# =================================================================
